@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Method</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <script>
+        // Creating a Student prototype with a property 'name'
+        function Student(name) {
+            this.name = name;
+        }
+
+        // Adding a method 'printDetails' to the Student prototype
+        Student.prototype.printDetails = function() {
+            console.log(`Hello, my name is ${this.name}`);
+        };
+
+        // Creating an instance of Student
+        const student1 = new Student('Mithun');
+
+        // Calling the method
+        student1.printDetails(); // Output: "Hello, my name is Mithun"
+    </script>
+</body>
+</html>

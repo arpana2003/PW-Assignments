@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Hoisting with var</title>
+</head>
+<body>
+    <h1>Variable Hoisting with var</h1>
+    <script>
+        console.log(myVar);
+        function demoHoisting() {
+            var myVar = 10;
+            console.log(myVar);
+        }
+        demoHoisting();
+    </script>
+</body>
+</html>

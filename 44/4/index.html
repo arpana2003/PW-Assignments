@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Salary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Salary</h1>
+    <p id="salary"></p>
+
+    <script>
+        class Employee {
+            constructor(name, position, salary) {
+                this.name = name;
+                this.position = position;
+                this.salary = salary;
+            }
+
+            getSalary() {
+                return `Salary: ${this.salary}`;
+            }
+        }
+
+        const employee = new Employee('Alice', 'Software Engineer', 'Rs. 50,000');
+        document.getElementById('salary').textContent = employee.getSalary();
+    </script>
+</body>
+</html>

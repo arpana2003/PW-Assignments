@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text Highlighting</h1>
+    <p id="textParagraph">
+        JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript specification. It has dynamic typing, prototype-based object-orientation, and first-class functions. As of 2024, JavaScript is used for both client-side and server-side development.
+    </p>
+
+    <script>
+        const paragraph = document.getElementById('textParagraph');
+        const words = paragraph.textContent.split(' ');
+
+        paragraph.innerHTML = words.map(word => {
+            return word.length > 8 ? `<span class="highlight">${word}</span>` : word;
+        }).join(' ');
+    </script>
+</body>
+</html>

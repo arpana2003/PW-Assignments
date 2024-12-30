@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robust Functions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px;
+            margin-top: 20px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Person Information</h1>
+    <button onclick="getPerson({name: 'John', age: 30})">Get Person Info</button>
+    <p id="output"></p>
+
+    <script>
+        function getPerson(person) {
+            try {
+                if (typeof person !== 'object' || !person.name || !person.age) {
+                    throw new Error('Invalid parameter type');
+                }
+                return `Name: ${person.name}, Age: ${person.age}`;
+            } catch (error) {
+                document.getElementById('output').textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>

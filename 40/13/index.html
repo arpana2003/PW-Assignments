@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        #billOutput {
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bill Splitter</h1>
+    <div id="billOutput"></div>
+    <script>
+        function billSplitter(dishes, people) {
+            let total = dishes.reduce((sum, dish) => sum + dish, 0);
+            let perPerson = total / people;
+            return {
+                totalBill: total,
+                perPerson: perPerson
+            };
+        }
+
+        const dishes = [150, 200, 100, 50]; // cost of each dish
+        const people = 4; // number of people
+        const result = billSplitter(dishes, people);
+        document.getElementById('billOutput').textContent = `Total Bill: Rs. ${result.totalBill}, Bill per Person: Rs. ${result.perPerson}`;
+    </script>
+</body>
+</html>

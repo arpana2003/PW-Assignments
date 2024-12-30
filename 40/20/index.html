@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic List Adding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        ol {
+            text-align: left;
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>What you'll learn in the course</h1>
+    <ol id="learningList"></ol>
+    <button onclick="addListItem()">Add Next Item</button>
+    <p id="message"></p>
+
+    <script>
+        const learningItems = [
+            "HTML Basics",
+            "CSS Styling",
+            "JavaScript Basics",
+            "DOM Manipulation",
+            "Responsive Web Design"
+        ];
+
+        let index = 0;
+
+        function addListItem() {
+            const list = document.getElementById('learningList');
+            const message = document.getElementById('message');
+
+            if (index < learningItems.length) {
+                const listItem = document.createElement('li');
+                listItem.textContent = learningItems[index];
+                list.appendChild(listItem);
+                index++;
+            } else {
+                message.textContent = "All items have been added!";
+            }
+        }
+    </script>
+</body>
+</html>

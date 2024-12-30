@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting with let, var, and const</title>
+</head>
+<body>
+    <h1>Hoisting with let, var, and const</h1>
+    <script>
+        {
+            console.log(myVar);
+            var myVar = 1;
+            let myLet = 2;
+            const myConst = 3;
+
+            console.log(myVar);
+            console.log(myLet);
+            console.log(myConst);
+        }
+    </script>
+</body>
+</html>

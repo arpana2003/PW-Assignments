@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Checker using Closure</title>
+</head>
+<body>
+    <h1>Number Checker</h1>
+    <script>
+        function numberChecker(numbers) {
+            // The returned function checks if a number is in the array
+            return function(num) {
+                return numbers.includes(num);
+            };
+        }
+
+        const checkArray = numberChecker([1, 2, 3, 4, 5]);
+        
+        // Testing the function
+        console.log(checkArray(3)); // true
+        console.log(checkArray(10)); // false
+    </script>
+</body>
+</html>

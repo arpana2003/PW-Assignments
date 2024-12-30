@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 10px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Convert String to Number</h1>
+    <input type="text" id="stringInput" placeholder="Enter a number">
+    <button onclick="convertToNumber()">Convert</button>
+    <p id="output"></p>
+
+    <script>
+        function convertToNumber() {
+            const input = document.getElementById('stringInput').value;
+            const output = document.getElementById('output');
+
+            try {
+                const result = Number(input);
+                if (isNaN(result)) {
+                    throw new Error('Invalid number');
+                }
+                output.textContent = `Converted Number: ${result}`;
+            } catch (error) {
+                output.textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>

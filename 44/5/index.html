@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Class with Default Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Person Details</h1>
+    <p id="personDetails"></p>
+
+    <script>
+        class Person {
+            constructor(name = "Unknown", age = 0) {
+                this.name = name;
+                this.age = age;
+            }
+
+            getDetails() {
+                return `Name: ${this.name}, Age: ${this.age}`;
+            }
+        }
+
+        const person1 = new Person();
+        const person2 = new Person("John", 30);
+
+        document.getElementById('personDetails').textContent = person1.getDetails() + " | " + person2.getDetails();
+    </script>
+</body>
+</html>

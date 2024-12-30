@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        #accountOutput {
+            margin-top: 20px;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banking Application</h1>
+    <div id="accountOutput"></div>
+    <script>
+        const account = {
+            name: "John Doe",
+            balance: 5000,
+            deposit(amount) {
+                this.balance += amount;
+            },
+            withdraw(amount) {
+                if (this.balance >= amount) {
+                    this.balance -= amount;
+                } else {
+                    console.log("Insufficient balance");
+                }
+            }
+        };
+
+        account.deposit(2000);
+        account.withdraw(1000);
+
+        document.getElementById('accountOutput').textContent = `Account Holder: ${account.name}, Balance: Rs. ${account.balance}`;
+    </script>
+</body>
+</html>

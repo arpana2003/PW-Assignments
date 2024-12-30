@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Description</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Description</h1>
+    <p id="carDescription"></p>
+
+    <script>
+        class Car {
+            constructor(company, model, year) {
+                this.company = company;
+                this.model = model;
+                this.year = year;
+            }
+
+            getDescription() {
+                return `This is a ${this.year} ${this.company} ${this.model}`;
+            }
+        }
+
+        const myCar = new Car('Toyota', 'Corolla', 2021);
+        document.getElementById('carDescription').textContent = myCar.getDescription();
+    </script>
+</body>
+</html>

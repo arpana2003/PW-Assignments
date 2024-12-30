@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting with Function Expression</title>
+</head>
+<body>
+    <h1>Hoisting with Function Expression</h1>
+    <script>
+        try {
+            console.log(multiplyNumbers(2, 3));
+        } catch (error) {
+            console.error(error);
+        }
+
+        var multiplyNumbers = function(a, b) {
+            return a * b;
+        };
+    </script>
+</body>
+</html>

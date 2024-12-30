@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+</head>
+<body>
+    <h1>String Manipulation</h1>
+    <script>
+        function manipulateString(str) {
+            const manipulatedString = str.toUpperCase();
+            return function logString() {
+                console.log(`The manipulated string is: ${manipulatedString}`);
+            };
+        }
+
+        const log = manipulateString("hello world");
+        log(); // Output: "The manipulated string is: HELLO WORLD"
+    </script>
+</body>
+</html>

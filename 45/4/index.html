@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange Books Alphabetically</title>
+</head>
+<body>
+    <h1>Arrange Books Alphabetically</h1>
+    <script>
+        function sortBooksByTitle(books, callback) {
+            const titles = books.map(book => book.title);
+            callback(titles);
+        }
+
+        function logTitles(titles) {
+            console.log(titles.sort());
+        }
+
+        const books = [
+            { title: "JavaScript: The Good Parts", author: "Douglas Crockford", year: 2008 },
+            { title: "Clean Code", author: "Robert C. Martin", year: 2008 },
+            { title: "The Pragmatic Programmer", author: "Andrew Hunt", year: 1999 }
+        ];
+
+        sortBooksByTitle(books, logTitles); // Output: ["Clean Code", "JavaScript: The Good Parts", "The Pragmatic Programmer"]
+    </script>
+</body>
+</html>
