@@ -1,0 +1,57 @@
+A pseudo-class in CSS is a keyword added to selectors that specifies a special state of an element. It is called a "pseudo-class" because it doesn't directly represent an element in the document tree, but rather it targets elements based on their state, position, or other dynamic conditions.
+
+Example: The :hover pseudo-class targets an element when the user hovers over it with the mouse.
+Why "pseudo"?: It is not a real class in the HTML, but acts like a class to style elements based on their state or behavior.
+
+
+------------------------------------------------
+A gradient in CSS is a smooth transition between two or more colors. It is used to create a visual effect where colors blend into each other without a hard line separating them.
+
+CSS supports two main types of gradients:
+
+1. Linear Gradients
+A linear gradient gradually changes colors along a straight line (either horizontal, vertical, or at an angle).
+
+background: linear-gradient(to bottom, blue, red);
+
+2. Radial Gradients
+A radial gradient radiates outwards from a central point (can be circular or elliptical).
+Syntax:
+background: radial-gradient(circle, yellow, orange);
+
+--------------------------------------
+
+
+A CSS transition allows an element’s property to change smoothly over a specified duration when triggered (e.g., on hover or focus).
+
+The transition property enables you to change values smoothly instead of instantaneously, improving user experience and making the UI more interactive.
+
+1. transition Property
+It is a shorthand for defining multiple transition properties in one line
+
+transition: property duration timing-function delay;
+
+
+Property: Specifies which property the transition will affect (e.g., color, background-color, height, etc.).
+Duration: Specifies the duration of the transition (e.g., 2s, 500ms).
+Timing Function: Specifies the speed curve of the transition. Common values include:
+linear: The transition has the same speed from start to finish.
+ease: The transition starts slow, becomes faster, and then slows down.
+ease-in: The transition starts slow and speeds up.
+ease-out: The transition starts fast and slows down.
+ease-in-out: The transition starts and ends slow, with a fast middle.
+Delay: Specifies when the transition should start (e.g., 1s delay before starting).
+
+
+
+
+
+
+
+
+
+
+
+
+
+

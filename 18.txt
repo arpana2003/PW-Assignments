@@ -1,0 +1,97 @@
+CSS selectors are used to target HTML elements and apply styles to them. They play a crucial role in determining which elements the styles should apply to. This enables developers to:
+
+Style Specific Elements: Select elements precisely for custom styling.
+Improve Code Efficiency: Avoid repetitive inline styling by grouping and reusing selectors.
+Maintain Separation of Concerns: Keep content (HTML) and design (CSS) separate, enhancing code readability and maintainability.
+
+------------------------------------------
+
+Different Types of Selectors in CSS
+CSS selectors can be broadly categorized into the following types:
+
+1. Universal Selector
+Targets all elements on a page.
+* {
+  margin: 0;
+  padding: 0;
+}
+
+2. Type Selector
+Targets all instances of a specific HTML element.
+
+p {
+  color: blue;
+}
+
+3. Class Selector
+Targets elements with a specific class attribute
+.highlight {
+  background-color: yellow;
+}
+
+4: ID Selector
+Targets a single element with a specific id attribute.
+#main-heading {
+  font-size: 24px;
+}
+
+5. Grouping Selector
+Targets multiple elements by grouping selectors with commas.
+h1, h2, p {
+  font-family: Arial, sans-serif;
+}
+
+6. Descendant Selector
+Targets elements nested within a specific parent.
+div p {
+  color: gray;
+}
+
+7. Child Selector (>)
+Targets only direct children of a parent.
+ul > li {
+  list-style-type: square;
+}
+
+8. Adjacent Sibling Selector (+)
+Targets the first sibling immediately following a specific element
+h1 + p {
+  font-style: italic;
+}
+
+
+----------------------------------------
+
+External fonts can be included using web font services like Google Fonts or by importing custom fonts into your project.
+
+1. Using Google Fonts
+Visit Google Fonts and choose a font.
+Copy the <link> tag or @import rule provided.
+
+Example: Link Method
+Add the <link> tag in the <head> section of your HTML file:
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+Example: Import Method
+Include the @import rule in your CSS:
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

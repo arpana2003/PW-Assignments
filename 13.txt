@@ -1,0 +1,78 @@
+Inline Elements
+Definition: Inline elements occupy only as much width as necessary and do not start on a new line.
+Characteristics:
+Do not disrupt the flow of content.
+Can be nested inside block elements.
+Examples: <span>, <a>, <strong>, <em>, <img>, <button>
+
+Block Elements
+Definition: Block elements occupy the entire width of their container and always start on a new line.
+Characteristics:
+Typically used to define structural components.
+Can contain other block or inline elements.
+Examples: <div>, <p>, <h1>-<h6>, <ul>, <table>, <section>.
+
+------------------------------------------
+
+The <img> tag is used to display images on a web page. It is a self-closing tag and does not require an end tag.
+
+<img src="image.jpg" alt="Description of the image">
+
+Important Attributes:
+1:src (Source): Specifies the path to the image file.
+2:alt (Alternative Text): Provides a description of the image for accessibility and is displayed if the image fails to load
+
+----------------------------------------
+
+Ordered List (<ol>)
+Creates a list with numbers or letters.
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ol>
+
+Unordered List (<ul>)
+Creates a list with bullet points.
+
+<ul>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+
+Description List (<dl>)
+Creates a list with terms and their descriptions.
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+
+--------------------------------------------
+
+Internal Links
+Used to link to other pages within the same website.
+<a href="about.html">About Us</a>
+
+External Links
+Used to link to pages on other website
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

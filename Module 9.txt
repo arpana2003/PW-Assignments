@@ -1,0 +1,17 @@
+HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It defines the structure of web pages using a system of tags and attributes. For example, it allows developers to define headings, paragraphs, images, links, and other elements that make up a web page.
+
+--------------------------------------------
+
+CSS (Cascading Style Sheets) is a styling language used to control the appearance of HTML content. It separates the presentation layer from the structure, enabling developers to define styles such as colors, fonts, layouts, and spacing for web pages. CSS helps make web pages visually appealing and responsive to different screen sizes.
+
+-------------------------------------------
+
+JavaScript was created to make web pages interactive. While HTML and CSS handle structure and style, they are static and cannot respond dynamically to user interactions. JavaScript introduced functionality like form validation, animations, event handling, and dynamic content updates without requiring the page to reload. It made web pages more engaging and allowed for the development of web applications.
+
+--------------------------------------------
+
+In 1995, Brendan Eich developed JavaScript in just 10 days while working at Netscape. Initially, it was called Mocha, then renamed LiveScript, and finally JavaScript to leverage the popularity of Java at the time (though they are unrelated languages).
+
+JavaScript gained popularity because it allowed developers to create interactive features directly within web browsers. To standardize its implementation, a governing body called ECMA International created a specification for the language, called ECMAScript, in 1997. ECMAScript ensures that JavaScript works consistently across different browsers.
+
+--------------------------------------

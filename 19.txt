@@ -1,0 +1,65 @@
+Padding
+Definition: Padding is the space between the content of an element and its border. It creates internal space within the element.
+Usage: Use padding when you want to add space inside an element, ensuring that the content does not touch the borders of the element.
+
+Margin
+Definition: Margin is the space outside the border of an element. It creates space between the element and other surrounding elements.
+Usage: Use margin when you want to control the space between an element and its surrounding elements.
+
+-----------------------------------------
+
+The display property in CSS defines how an element is displayed on the web page and determines its layout behavior.
+
+Types of display Property:
+1:      display: inline
+
+Makes the element behave like an inline element. It does not start on a new line and only takes up as much width as necessary (i.e., it shrinks to fit its content).
+Example: <span>, <a>, and <strong> are inline elements.
+
+2:      display: block
+
+Makes the element behave like a block-level element. It starts on a new line, takes up the full available width (by default), and pushes other elements to the next line.
+Example: <div>, <p>, and <h1> are block elements.
+
+3:        display: inline-block
+
+Combines the characteristics of both inline and block elements. The element remains inline, but it can also have width, height, padding, margin, and other block-level properties applied.
+Example: Useful for creating horizontal navigation bars.
+
+---------------------------------------------
+
+These properties help define the minimum and maximum size limits of an element, giving you more control over layouts and responsive design.
+
+1. min-height
+Definition: Specifies the minimum height of an element. The element will never be shorter than the value defined, even if its content is smaller.
+Usage: Use min-height to ensure that an element has at least a certain height.
+
+2. min-width
+Definition: Specifies the minimum width of an element. The element will never be narrower than the value defined, even if its content is smaller.
+Usage: Use min-width to ensure that an element has at least a certain width.
+
+3. max-height
+Definition: Specifies the maximum height an element can have. The element will not exceed the height value set, even if its content requires more space.
+Usage: Use max-height when you want to limit the vertical size of an element (useful for scrollable elements).
+
+4. max-width
+Definition: Specifies the maximum width an element can have. The element will not exceed the width value set, even if the content is wider.
+Usage: Use max-width to prevent an element from growing too wide, especially useful for responsive layouts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

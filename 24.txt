@@ -1,0 +1,88 @@
+CSS Grid is a layout system that allows you to create complex web layouts with ease. It divides a page into rows and columns, enabling you to place and align elements precisely within a two-dimensional grid system. This makes it easier to create complex designs without relying on floats or positioning.
+
+Key Features of CSS Grid:
+Two-dimensional: Unlike Flexbox (which is one-dimensional), CSS Grid allows you to define both rows and columns simultaneously.
+Control: You can control the size and placement of grid items with great flexibility.
+Responsive design: It allows for easy creation of responsive layouts with flexible grid-based systems.
+
+
+--------------------------------------------
+
+Both Flexbox and Grid are layout systems in CSS, but they serve different purposes:
+
+1. Purpose:
+Flexbox: Primarily designed for one-dimensional layouts (either in a row or a column). It is great for aligning items in a linear fashion, either horizontally or vertically.
+Grid: Designed for two-dimensional layouts (both rows and columns). It allows you to create complex layouts with both vertical and horizontal alignments.
+2. Axis of Layout:
+Flexbox: Works along a single axis (either horizontal or vertical). Items can be distributed in a row (row axis) or column (column axis).
+Grid: Works in two axes—both rows and columns—allowing you to design more complex, grid-based layouts.
+3. Use Case:
+Flexbox: Ideal for simpler, linear layouts (e.g., navigation bars, lists, simple alignments).
+Grid: Ideal for complex layouts where you need to control both rows and columns (e.g., grid-based designs like magazine layouts, dashboards).
+
+----------------------------------------
+
+To define rows and columns for your grid, you use the grid-template-columns and grid-template-rows properties in CSS.
+
+1. Defining Columns with grid-template-columns:
+This property defines the number and size of the columns in your grid.
+
+Syntax:
+grid-template-columns: <size> <size> ...;
+
+2. Defining Rows with grid-template-rows:
+This property defines the number and size of the rows in your grid.
+
+Syntax:
+grid-template-rows: <size> <size> ...;
+
+
+---------------------------------------------
+
+Grid Container Properties:
+
+1: display: grid: This property turns an element into a grid container, enabling the use of grid-related properties for its child elements.
+
+.container {
+  display: grid;
+}
+
+2: grid-template-columns: Defines the columns of the grid.
+
+.container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+Grid Item Properties:
+
+1: grid-column: Specifies where the grid item will start and end within the grid columns.
+
+.item {
+  grid-column: 1 / 3; /* Starts at column 1, ends at column 3 */
+}
+
+2: grid-row: Specifies where the grid item will start and end within the grid rows.
+
+.item {
+  grid-row: 2 / 4; /* Starts at row 2, ends at row 4 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

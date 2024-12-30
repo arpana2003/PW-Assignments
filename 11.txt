@@ -1,0 +1,43 @@
+The "Hello, World!" program is a traditional starting point for learning programming languages because:
+
+Simplicity: It’s a minimal example that introduces basic syntax and structure without overwhelming complexity.
+Verification: It ensures the environment is set up correctly (e.g., the compiler or interpreter works).
+Universality: It’s a widely recognized starting exercise, creating a sense of familiarity across languages.
+
+----------------------------------------
+
+Use of Comments
+Comments are used to add explanatory notes to the code, making it easier for others (or yourself) to understand.
+They help in debugging by allowing you to temporarily disable code.
+Comments are ignored by the browser and do not affect the webpage.
+
+<!-- This is a comment -->
+<p>This is a paragraph that will display.</p>
+<!-- <p>This paragraph is commented out and won't display.</p> -->
+
+
+--------------------------------------------
+An element consists of a start tag, content (optional), and an end tag. It represents the structure and content on a webpage.
+
+<p>This is an element.</p>
+
+
+Tags are the building blocks of HTML and are enclosed in angle brackets. They define the type of content.
+
+Start tag: <p>
+End tag: </p>
+
+Attributes provide additional information about an element. They are defined within the start tag and have a name-value pair.
+
+<img src="image.jpg" alt="Description of the image">
+
+----------------------------------
+
+HTML entities are special codes used to represent reserved characters (e.g., <, >, &) or characters that are not easily typed on a keyboard.
+
+
+
+
+
+
+

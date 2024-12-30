@@ -1,0 +1,38 @@
+HTML5 introduced several new features to improve web development, including:
+
+1. New Semantic Tags
+Tags like <header>, <footer>, <article>, <section>, and <aside> improve content structure and readability.
+2. Multimedia Support
+Audio and Video Tags:
+<audio> and <video> allow embedding media without external plugins like Flash.
+
+---------------------------------------
+
+
+Semantic tags are HTML5 elements that convey meaning about the content they enclose. They make the structure of the webpage more understandable to both browsers and developers.
+
+Examples of Semantic Tags
+<header>: Defines the header section of a webpage or section.
+<footer>: Represents the footer section.
+<article>: Represents independent, self-contained content.
+<section>: Defines a thematic grouping of content.
+<nav>: Indicates navigation links.
+
+
+-------------------------------------------
+Uses of Semantic Tags
+1:Improved Readability
+
+Semantic tags make the code easier to read and maintain.
+
+2:Enhanced Accessibility
+
+Assistive technologies (like screen readers) can better interpret and navigate the content.
+3:SEO Benefits
+
+Search engines prioritize semantic tags for better indexing and ranking.
+4:Consistent Styling
+
+Enables developers to style content sections specifically using CSS.
+
+

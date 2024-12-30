@@ -1,0 +1,83 @@
+Tables in HTML are used to display data in a structured, grid-like format consisting of rows and columns. The <table> element defines the table, and its structure is specified using child elements like <tr>, <th>, and <td>.
+
+Table Properties
+1:border: Adds a border around the table cells.
+2:cellpadding and cellspacing: Controls the spacing within and between table cells (deprecated but still in use).
+3:width and height: Specifies table dimensions.
+4:align: Aligns the table (e.g., left, center, right).
+5:colspan and rowspan: Merges multiple columns or rows into a single cell
+
+------------------------------------------
+
+1. <img>
+Displays images.
+Attributes: src, alt, width, height.
+2. <audio>
+Embeds audio files on a webpage.
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+Attributes:
+controls: Displays playback controls.
+autoplay: Plays audio automatically.
+loop: Repeats the audio.
+
+3. <video>
+Embeds video files.
+
+<video controls width="600">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+4. <source>
+Specifies the media source for <audio> and <video>.
+5. <iframe>
+Embeds external content like videos or web pages.
+
+----------------------------------
+
+GET
+Sends form data as a query string appended to the URL.
+Example URL:
+example.com/form?name=John&age=30
+Characteristics:
+Data is visible in the URL.
+Used for non-sensitive data.
+Limited data length.
+POST
+Sends form data in the request body (not visible in the URL).
+Characteristics:
+Data is hidden.
+Suitable for sensitive data (e.g., passwords).
+No data length limitation.  
+
+-------------------------------------------
+
+
+Input Types in HTML Forms
+HTML forms support various input types for collecting user data.
+
+Common Input Types
+text: Single-line text input.
+password: Masked text input for passwords.
+email: Validates email format.
+number: Numeric input with up/down arrows.
+url: Validates URL format.
+tel: Input for telephone numbers.
+search: Input for search functionality.
+date: Date picker.
+time: Time picker.
+color: Color picker.
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+CSS (Cascading Style Sheets)
+CSS is a stylesheet language used to control the presentation and layout of HTML elements on a web page. It separates content (HTML) from design, making websites more visually appealing and easier to maintain.
+
+Why Use CSS?
+Styling: Adds visual effects like colors, fonts, borders, and animations.
+Layout Control: Positions and aligns elements using techniques like Flexbox and Grid.
+Consistency: Ensures a uniform look and feel across multiple pages of a website.
+
+---------------------------------------
+
+Ways to Bring CSS into an HTML File
+1:Inline CSS
+
+Directly applied to a specific element using the style attribute.
+<p style="color: blue; font-size: 18px;">This is a paragraph.</p>
+
+2:Internal CSS
+
+Defined within a <style> tag in the <head> section of the HTML file.
+<style>
+  p {
+    color: red;
+    font-size: 20px;
+  }
+</style>
+<p>This is a paragraph.</p>
+
+3:External CSS
+
+Linked as a separate .css file, which is the best practice for maintaining larger projects.
+
+<link rel="stylesheet" href="styles.css">
+
+
+---------------------------------------------
+
+Specificity is a set of rules in CSS that determine which styles are applied to an element when there are conflicting declarations. The higher the specificity, the more precedence the rule has.
+
+How Specificity Works
+Each type of selector has a specificity value:
+Inline Styles: Highest specificity (e.g., style="color: red;").
+ID Selectors (#id): High specificity.
+Class Selectors (.class), Attribute Selectors ([type="text"]), and Pseudo-classes (:hover): Medium specificity.
+Element Selectors (div, p): Low specificity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

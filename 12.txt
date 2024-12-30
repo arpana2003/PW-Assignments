@@ -1,0 +1,19 @@
+Emmet is a web development toolkit that helps developers write HTML and CSS code faster by using abbreviations and shortcuts. It's widely supported in popular code editors like VS Code, Sublime Text, Atom, and others.
+
+Example:   div.container>ul>li*3
+
+--------------------------------------
+
+Advantages of Using Emmet
+1. Faster Coding
+Drastically reduces the amount of time spent writing repetitive code.
+Developers can create complex structures with simple abbreviations.
+2. Reduces Errors
+The auto-expansion of code ensures proper syntax, minimizing typos or structural mistakes.
+3. Productivity Boost
+Developers can focus on designing and solving problems rather than worrying about repetitive typing.
+4. Consistency
+Ensures uniform code structures, making it easier to maintain and read.
+5. Customizable
+Users can create custom snippets and workflows tailored to their needs.
+

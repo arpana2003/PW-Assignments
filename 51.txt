@@ -1,0 +1,161 @@
+RDBMS (Relational Database Management System) is a type of database management system (DBMS) that stores data in a structured format using rows and columns (tables). Each table in an RDBMS has a unique key that helps maintain relationships between tables. RDBMS uses Structured Query Language (SQL) to manage and manipulate data.
+
+Why do industries use RDBMS?
+
+Structured Data Management: RDBMS stores data in tables, making it easy to retrieve and manage structured data.
+Data Integrity: Enforces rules like primary keys, foreign keys, and constraints to maintain data accuracy and consistency.
+Flexibility: Allows complex queries using SQL, enabling industries to extract meaningful insights.
+Scalability: Suitable for handling large amounts of data while maintaining performance.
+
+----------------------------------------------
+
+
+The Relational Data Model is a way of representing data using tables, also called relations, where each table is a collection of rows and columns. The main elements of the relational data model include:
+
+Tables: Data is organized into tables, with rows (records) and columns (attributes).
+Primary Key: A unique identifier for each row in a table.
+Foreign Key: A column in one table that links to the primary key of another table, establishing relationships between tables.
+Relationships: Defines how different tables are linked using primary and foreign keys.
+Types of Relationships:
+
+One-to-One: One record in Table A is related to one record in Table B.
+One-to-Many: One record in Table A is related to many records in Table B.
+Many-to-Many: Many records in Table A are related to many records in Table B, often implemented via an intermediary table.
+
+---------------------------------------------
+Relationships are critical in an RDBMS because they define how data in different tables is related and how it can be accessed or manipulated together. Relationships help:
+
+Maintain Data Integrity: Relationships help ensure that related data is consistent.
+Improve Query Performance: Proper relationships help in joining tables, making it easier to query data from multiple tables.
+Eliminate Redundancy: By connecting tables logically, relationships prevent duplication of data.
+Types of Relationships:
+
+One-to-One: A single row in one table corresponds to one row in another table. Example: A person’s passport information (one person to one passport).
+One-to-Many: A single row in one table corresponds to many rows in another table. Example: One customer can place many orders.
+Many-to-Many: Many rows in one table correspond to many rows in another table. This is often implemented using a third junction table. Example: Students can enroll in multiple courses, and each course can have multiple students.
+
+-----------------------------------------------
+Types of Keys in RDBMS:
+
+Primary Key: A unique identifier for each record in a table. No two rows can have the same primary key value.
+
+Example: In a "Customer" table, the "CustomerID" is a primary key.
+Foreign Key: A key used to link two tables together. It refers to the primary key in another table.
+
+Example: In an "Orders" table, the "CustomerID" is a foreign key referring to the "CustomerID" in the "Customer" table.
+Unique Key: Ensures that all values in a column are unique.
+
+Example: In a "User" table, the "Email" column may be a unique key to prevent duplicate email addresses.
+Composite Key: A primary key that consists of more than one column.
+
+Example: In an "Enrollment" table, the combination of "StudentID" and "CourseID" can serve as a composite key.
+Candidate Key: A set of columns that can uniquely identify records in a table. A table can have multiple candidate keys, but only one primary key.
+
+Example: In a "Employee" table, "EmployeeID" and "Email" can be candidate keys.
+Alternate Key: A candidate key that is not selected as the primary key.
+
+Example: In an "Employee" table, if "EmployeeID" is selected as the primary key, "Email" becomes an alternate key.
+
+------------------------------------------------
+The Single Responsibility Principle (SRP) is one of the SOLID principles of object-oriented design. It states that a class should have only one reason to change, meaning that it should have only one job or responsibility. By adhering to SRP, you ensure that a class has a clear focus, which makes the code easier to maintain, test, and extend.
+
+------------------------------------------------
+
+In a denormalized database, data redundancy is introduced to improve query performance by reducing the number of joins. However, it comes with the risk of several types of errors:
+
+Data Inconsistency: When the same data is stored in multiple places, an update in one location might not reflect in others, leading to discrepancies.
+
+Example: Updating a customer's address in one table but not in others.
+Data Anomalies: Due to duplication, you may face insertion, update, or deletion anomalies.
+
+Example: Deleting a record that exists in multiple tables can result in loss of data in some places.
+Increased Storage Requirements: Storing redundant data increases the overall storage needed for the database.
+
+Complex Maintenance: Keeping the redundant data synchronized across multiple tables can be difficult and error-prone.
+
+------------------------------------------
+
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing large tables into smaller, manageable ones and defining relationships between them.
+
+Need for Normalization:
+
+Eliminate Redundancy: Reduces repetitive data and storage requirements.
+Improve Data Integrity: Ensures that data is consistent across the database.
+Faster Data Access: By organizing data into smaller, well-structured tables, the system can perform faster queries.
+
+-----------------------------------------------
+First Normal Form (1NF):
+
+Eliminates duplicate records by ensuring that each column contains atomic values (no sets, arrays, or lists).
+Example: A table with customer data where the address is split into multiple columns for street, city, and zip code.
+Second Normal Form (2NF):
+
+Ensures that the table is in 1NF and that all non-key attributes are fully dependent on the primary key (removes partial dependency).
+Example: Moving information that depends on only part of a composite key to a new table.
+Third Normal Form (3NF):
+
+Ensures that the table is in 2NF and that no transitive dependencies exist (i.e., non-key attributes should not depend on other non-key attributes).
+Example: If a "Student" table has both "StudentID" and "InstructorName", you should remove the instructor data into a separate table.
+Boyce-Codd Normal Form (BCNF):
+
+A stricter version of 3NF where every determinant is a candidate key.
+Example: If an employee's department depends on their job title, it should be split into a new table with job titles and their respective departments.
+
+-----------------------------------------------
+
+A join is a SQL operation that combines data from two or more tables based on a related column. Joins are necessary to retrieve information spread across different tables, as data in a relational database is usually normalized and distributed into multiple tables.
+
+Why we need joins:
+
+Retrieve Related Data: Joins allow you to pull data from multiple related tables.
+Optimize Storage: By separating data into different tables, joins make it possible to access data without unnecessary duplication.
+
+----------------------------------------------
+
+INNER JOIN: Returns only the rows that have matching values in both tables.
+
+Example: If you join the "Customers" table and the "Orders" table using an inner join, it will return customers who have placed orders.
+LEFT JOIN (or LEFT OUTER JOIN): Returns all rows from the left table and the matching rows from the right table. If there’s no match, NULL values are returned for the right table's columns.
+
+Example: All customers are listed, even if they haven't placed any orders.
+RIGHT JOIN (or RIGHT OUTER JOIN): Returns all rows from the right table and the matching rows from the left table. If there’s no match, NULL values are returned for the left table’s columns.
+
+Example: All orders are listed, even if they were not placed by any customers.
+FULL JOIN (or FULL OUTER JOIN): Returns all rows when there is a match in either left or right table. If there's no match, NULL values are returned for non-matching rows.
+
+Example: Lists all customers and all orders, with NULLs for customers without orders and orders without customers.
+CROSS JOIN: Returns the Cartesian product of both tables, i.e., all possible combinations of rows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
